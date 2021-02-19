@@ -2,7 +2,7 @@ const querystring = require("querystring");
 
 exports.handler = async (event, context) => {
   // Only allow POST
-  if (event.httpMethod !== "POST") {
+  if (event.method !== "post") {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 

@@ -16,7 +16,7 @@ The inevitable Hello World example.
 
 ### Try it out
 
-[Say hello!](/.netlify/functions/hello)
+[Say hello!](/api/hello)
 
 ## Hello, World! (async version)
 
@@ -28,7 +28,7 @@ The Hello World example can get sweeter with some async syntactic sugar. With as
 
 ### Try it out
 
-[Say hello!](/.netlify/functions/hello_async)
+[Say hello!](/api/hello_async)
 
 ## Hello, {name}
 
@@ -40,7 +40,7 @@ Customize the greeting calling the Lambda endpoint with an optional `name` param
 
 ### Try it out
 
-<form class="form-example" action="/.netlify/functions/hello_name">
+<form class="form-example" action="/api/hello_name">
   <label>
     What’s your name?
     <input type="text" name="name">
@@ -58,7 +58,7 @@ Let’s make sure we only process POST requests for our customized greeting.
 
 ### Try it out
 
-<form class="form-example" action="/.netlify/functions/hello_name_post" method="POST">
+<form class="form-example" action="/api/hello_name_post" method="POST">
   <label>
     What’s your name?
     <input type="text" name="name">
@@ -66,7 +66,7 @@ Let’s make sure we only process POST requests for our customized greeting.
   <button class="button" type="submit">Say hello!</button>
 </form>
 
-[Show me the error](/.netlify/functions/hello_name_post?name=Me)
+[Show me the error](/api/hello_name_post?name=Me)
 
 ## Read environment variables
 
@@ -82,7 +82,7 @@ Note: environment variables get baked into your function at deploy time, so you 
 
 ### Try it out
 
-[Show me the environment variable](/.netlify/functions/hello_env)
+[Show me the environment variable](/api/hello_env)
 
 ## Fetch
 
@@ -94,7 +94,7 @@ I see you like APIs! I’ll put an API in your API so you can API while you API.
 
 ### Try it out
 
-[Tell me a joke!](/.netlify/functions/hello_fetch)
+[Tell me a joke!](/api/hello_fetch)
 
 ## Send a Slack message
 
@@ -118,7 +118,7 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXXXXXXXX
 
 ### Try it out
 
-<form class="form-example" action="/.netlify/functions/hello_slack" method="POST">
+<form class="form-example" action="/api/hello_slack" method="POST">
   <label>
     What’s your name?
     <input type="text" name="name">

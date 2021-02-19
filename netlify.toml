@@ -1,7 +1,6 @@
 [build]
   publish = "dist"
   command = "npm run build"
-  functions = "dist/functions"
   
 [[redirects]]  
   from = "/add-tutorial/"
@@ -24,3 +23,9 @@
 
 [[plugins]]
   package = "netlify-plugin-minify-html"
+
+[[plugins]]
+  package = "netlify-plugin-nimbella"
+
+[plugins.inputs]
+  functions = 'src/functions'
